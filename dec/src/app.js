@@ -76,18 +76,18 @@ var sInst = null;
 app.post("/gen", (req, res) => {
   res.render("gen");
   sName = req.body.user.name;
-  console.log(sName);
+  // console.log(sName);
   sExp = req.body.user.exp;
-  console.log(sExp);
+  // console.log(sExp);
   sAim = req.body.user.aim;
-  console.log(sAim);
+  // console.log(sAim);
   sDate = req.body.user.date;
-  console.log(sDate);
+  // console.log(sDate);
   sColor = req.body.user.color;
-  console.log(sColor);
+  // console.log(sColor);
   sInst = req.body.user.inst;
-  console.log(sInst);
-  downPdf();
+  // console.log(sInst);
+  downPdf(sName, sDate, sExp, sAim, sInst);
 });
 
 // app.get("/homeWebApp", (req, res) => {
