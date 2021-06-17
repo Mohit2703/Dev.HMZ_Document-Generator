@@ -1,5 +1,6 @@
 const express = require("express");
 const generatePDF = require("./views/trans.js");
+const downPdf = require("./views/doc.js");
 // const alert = require("alert");
 // const path=require('path');
 const bodyParser = require("body-parser");
@@ -11,6 +12,7 @@ const server = htpp.createServer(app);
 const PORT = 80 || process.env.PORT;
 const hostname = "127.0.0.1";
 const fs = require("fs");
+// const { readUInt16 } = require("pdfkit/js/data");
 app.use(express.urlencoded({ extended: true }));
 app.use(
   bodyParser.urlencoded({
@@ -85,7 +87,7 @@ app.post("/gen", (req, res) => {
   console.log(sColor);
   sInst = req.body.user.inst;
   console.log(sInst);
-  generatePDF(sName, sDate, sExp, sAim, sInst);
+  downPdf();
 });
 
 // app.get("/homeWebApp", (req, res) => {
