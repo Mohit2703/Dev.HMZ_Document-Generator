@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script>
+        window.onload = function() {
+            document.getElementById('loader').style.display = "none";
+
+        };
+    </script>
+</head>
+<body>
+    <div id="loader"></div>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="/" class="nav-link">
+                    <span class="link-text">DEV.HMZ</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/video" class="nav-link">
+                    <i class="fas fa-video"></i>
+                    <span class="link-text">Video</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/pdf" class="nav-link">
+                    <i class="fas fa-file-pdf"></i>
+                    <span class="link-text">Pdf</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/team" class="nav-link">
+                    <i class="fas fa-users"></i>
+                    <span class="link-text">Web-profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="wrapper">
+            <h1 style=" font-family: 'Roboto',sans-serif; font-weight: 900;">Please enter the aim of the experiment.</h1>
+            <p style=" font-family: 'Montserrat',sans-serif; font-size: 20px; color: white; font-weight: 500;">We will provide you a video link of the practical.</p>
+            <div class="search_box">
+                <div class="search_btn">
+                    <i class="fas fa-search"></i></div>
+                    <input type="text" name="" id="" placeholder="please enter the aim.." class="input_search" maxlength="5" style="font-size: 20px;">
+              </div>
+              <div class="btn">
+                <button class="pushable">
+                    <span class="front">Search</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

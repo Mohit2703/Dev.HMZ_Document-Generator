@@ -72,7 +72,7 @@ var sDate = null;
 var sColor = null;
 var sInst = null;
 app.post("/im", (req, res) => {
-  res.render("upl");
+  res.render("pdf");
   sName = req.body.user.name;
   console.log(sName);
   sExp = req.body.user.exp;

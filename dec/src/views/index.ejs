@@ -10,9 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+        <script>
+            window.onload = function() {
+                document.getElementById('loader').style.display = "none";
+    
+            };
+        </script>
 </head>
 
 <body>
+    <div id="loader"></div>
+    <div class="down">
+        <a href="#mid"><i class="fas fa-arrow-circle-down"></i></a>
+    </div>
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="logo">
@@ -40,7 +50,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/team" class="nav-link">
                     <i class="fas fa-users"></i>
                     <span class="link-text">Web-profile</span>
                 </a>
@@ -51,15 +61,16 @@
         <div class="content">
             <div class="heading">
                 <div class="head">
-                    <h1>DOCUMENT DECORATER</h1>
+                    <h1 style="font-family: 'Roboto', sans-serif;font-weight: 900;">DOCUMENT DECORATER</h1>
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_gDNEmq.json"
+                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_op2x6olh.json" mode="bounce"
                         background="transparent" speed="1" class="lot" loop autoplay></lottie-player>
                 </div>
-                <div class="para">
-                    <p>Here we have created a web app which can help you to find practicals from given aim and
-                        information and also you can find vedio tutorial for that practical from our website.So feel
-                        free to dive into our website.<br><br><span>Thank you for visiting our website.</span></p>
+                <div class="para" style="justify-content: center; margin: 0 2px;">
+                    <p style="font-family: 'Montserrat', sans-serif">Here we have created a web app which can help you
+                        to find practicals from given aim and information and also you can find vedio tutorial for that
+                        practical from our website.So feel free to dive into our website.<br><br><span
+                            style="font-family: 'Montserrat', sans-serif">Thank you for visiting our website.</span></p>
                 </div>
             </div>
             <div class="middle" id="mid">
@@ -69,30 +80,46 @@
                         <div class="option-container">
                             <div class="option">
                                 <input type="radio" class="radio" id="physics" name="catagory">
-                                <label for="physics">Physics</label>
+                                <label for="physics" style="font-family: 'Montserrat', sans-serif">Physics</label>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="chem" name="catagory">
-                                <label for="chem">Chemistry</label>
+                                <label for="chem" style="font-family: 'Montserrat', sans-serif">Chemistry</label>
                             </div>
                             <div class="option">
                                 <input type="radio" class="radio" id="biology" name="catagory">
-                                <label for="biology">Biology</label>
+                                <label for="biology" style="font-family: 'Montserrat', sans-serif">Biology</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="DLD" name="catagory">
+                                <label for="DLD" style="font-family: 'Montserrat', sans-serif">DLD</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="EDC" name="catagory">
+                                <label for="EDC" style="font-family: 'Montserrat', sans-serif">EDC</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="ICT" name="catagory">
+                                <label for="ict" style="font-family: 'Montserrat', sans-serif">ICT</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="ME" name="catagory">
+                                <label for="MECHANICS" style="font-family: 'Montserrat', sans-serif">MECHANICS</label>
                             </div>
                         </div>
-                        <div class="selected">
+                        <div class="selected" style="font-family: 'Montserrat', sans-serif">
                             select
                         </div>
                     </div>
                 </div>
 
                 <div class="btn">
-                    <button class="pushable">
+                   <a href="/pdf"><button class="pushable">
                         <span class="front">pdf practical</span>
-                    </button>
-                    <button class="pushable">
+                    </button></a>
+                    <a href="/video"><button class="pushable">
                         <span class="front">vedio practical</span>
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </div>

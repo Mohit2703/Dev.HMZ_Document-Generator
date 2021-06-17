@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
+   font-family: 'Roboto',sans-serif;
+}
+
+#loader{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    overflow: visible;
+    background: #0d141f url('animation_500_kpz3b0zr.gif') no-repeat 50% 50%;
+    /* background-size: cover; */
 }
 
 :root{
@@ -17,6 +32,8 @@ body{
     margin: 0;
     padding: 0;
     background: white;
+    height: 100%;
+    width: 100%;
 }
 body::-webkit-scrollbar{
     width: 0.25rem;
@@ -112,138 +129,69 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     align-content: center;
     background: chartreuse;
-    height: 100%;
-}
-.content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100%;
-    background: chocolate;
-}
-.heading{
-    height: 100%;
-    width: 100%;
-    background-image: url(https://cdn.hipwallpaper.com/i/98/58/q9gcxN.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-weight: bold;
-}
-.lot{
-    width: 500px;
-    height: 500px;
-}
-.middle{
-    background-image: url(https://i.pinimg.com/originals/e2/1a/fb/e21afb504509afa126f338e8c89e7274.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-weight: bold;
-    width: 100%;
-}
-.head{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.3em;
-    align-items: center;
-    text-align: center;
-}
-.para{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 10px;
-    text-align: center;
-    font-size: 25px;
-}
-.para i{
-    font-size: 2em;
-    cursor: pointer;
-    color: black;
-}
-.middle{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.select-box{
-    display: flex;
-    width: 500px;
-}
-.select-box .option-container{
-    background: rgb(65, 65, 65);
-    color: #f5f6fa;
-    max-height: 0;
-    width: 100%;
-    opacity: 0;
-    transition: all 0.4s;
-    border-radius: 8px;
-    overflow: hidden;
-    order: 1;
-}
-.select-box{
-    display: flex;
-    flex-direction: column;
-}
-.selected{
-    background: rgb(65, 65, 65);
-    border-radius: 8px;
-    margin-bottom: 8px;
-    color: white;
-    position: relative;
-    order: 0;
-}
-.selected::after{
-    content: "";
-    background: url(http://assets.stickpng.com/images/58f8bcf70ed2bdaf7c128307.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 100%;
-    width: 32px;
-    right: 10px;
-    top: 5px;
-    transition: all 0.4s;
-}
-.select-box .option-container.active{
-    max-height: 250px;
+   min-height: 100vh;
+    background-color: #000;
     opacity: 1;
-    overflow-y: scroll;
+    background-image:   radial-gradient(#474545 0.5px, rgb(31, 31, 31) 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0 10px 10px;
 }
-.select-box .option-container.active + .selected::after{
-    transform: rotateX(180deg);
-    top: -6px;
+.navbar:hover+.main{
+    margin-left: 16rem;
 }
-.select-box .option-container::-webkit-scrollbar{
-    width: 8px;
-    background: #0d141f;
-    border-radius: 0 8px 8px 0;
+.wrapper{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
-.select-box .option-container::-webkit-scrollbar-thumb{
-    background: #525861;
-    border-radius: 0 8px 8px 0;
+.wrapper h1{
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    color: white;
 }
-.select-box .option,.selected{
-    padding: 12px 12px;
+::placeholder{
+    color: white;
+}
+.search_box{
+    background-color: #643fef;
+    position: relative;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+}
+.search_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7a5cf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 15px;
     cursor: pointer;
 }
-.select-box .option:hover{
-    background: #414b57;
-}
-.select-box .option .radio{
-    display: none;
-}
-.select-box label{
-    cursor: pointer;
+.input_search{
+    outline: none;
+    border: 0;
+    background: #7a5cf0;
+    color: #fff;
+    padding: 15px 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
 }
 .btn{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .pushable {
     background: hsl(340deg 100% 32%);
@@ -276,49 +224,25 @@ body::-webkit-scrollbar-thumb{
       justify-content: center;
       align-items: center;
   }
+  .search_btn i{
+      font-weight: bold;
+      color: white;
+  }
 @media only screen and (max-width: 600px){
     body{
         height: 100%;
-        width: 100vw;
-    }
-    .lot{
-        width: 300px;
-        height: 300px;
+        display: grid;
+        grid-template-columns: 100%;
     }
     .navbar{
         top: 0;
-        width: 100vw;
+        width: 100%;
         height: 5rem;
         position: fixed;
         box-shadow: 0px 5px rgb(58, 58, 58);
     }
     .navbar:hover{
-        width: 100vw;
-    }
-    .main{
-        width: 100vw;
-    }
-    .content{
-        background: #141418;
-        width: 100vw;
-        height: 100%;
-        flex-direction: column;
-    }
-    .middle{
-        flex-wrap: wrap;
-        height: 100%;
-    }
-    .heading{
-        flex-wrap: wrap;
-        height: 100%;
-    }
-    .para{
-        margin: 0;
-    }
-    .main{
-        margin: 0;
-        padding: 0;
-        flex-wrap: wrap;
+        width: 100%;
     }
     .navbar:hover+.main{
         margin: 0px 0px;
@@ -339,13 +263,6 @@ body::-webkit-scrollbar-thumb{
     .nav-link i{
         margin: 0;
     }
-    .select-box{
-        width: 80%;
-    }
-    .main{
-        margin-top: 4.9rem;
-        width: 100%;
-    }
     .navbar-nav{
         display: flex;
         flex-direction: row;
@@ -364,15 +281,21 @@ body::-webkit-scrollbar-thumb{
     .link-text{
         display: none;
     }
-    .btn{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .main{
+        margin-top: 5rem;
+        margin-left: 0;
+        width: 100%;
+        padding: 0;
     }
-    .pushable{
-        margin: 0;
-        margin-top: 10px;
+    .wrapper{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+        margin:0;
+        flex-basis: auto;
+    }
+    .input_search{
+        width: 80%;
     }
 }
 @media only screen and (min-width: 600px){
