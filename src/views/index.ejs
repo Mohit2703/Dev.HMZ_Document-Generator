@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="/" class="nav-link">
+                    <span class="link-text">DEV.HMZ</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span class="link-text">home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/video" class="nav-link">
+                    <i class="fas fa-video"></i>
+                    <span class="link-text">Video</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/pdf" class="nav-link">
+                    <i class="fas fa-file-pdf"></i>
+                    <span class="link-text">Pdf</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-users"></i>
+                    <span class="link-text">Web-profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="content">
+            <div class="heading">
+                <div class="head">
+                    <h1>DOCUMENT DECORATER</h1>
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_gDNEmq.json"
+                        background="transparent" speed="1" class="lot" loop autoplay></lottie-player>
+                </div>
+                <div class="para">
+                    <p>Here we have created a web app which can help you to find practicals from given aim and
+                        information and also you can find vedio tutorial for that practical from our website.So feel
+                        free to dive into our website.<br><br><span>Thank you for visiting our website.</span></p>
+                </div>
+            </div>
+            <div class="middle" id="mid">
+                <div class="container">
+                    <h2>Select subject</h2>
+                    <div class="select-box">
+                        <div class="option-container">
+                            <div class="option">
+                                <input type="radio" class="radio" id="physics" name="catagory">
+                                <label for="physics">Physics</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="chem" name="catagory">
+                                <label for="chem">Chemistry</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" id="biology" name="catagory">
+                                <label for="biology">Biology</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            select
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button class="pushable">
+                        <span class="front">pdf practical</span>
+                    </button>
+                    <button class="pushable">
+                        <span class="front">vedio practical</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script/home.js"></script>
+</body>
+
+</html>
