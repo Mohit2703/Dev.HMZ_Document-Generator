@@ -59,7 +59,8 @@ const generatePDF = async (name, Date, ExpName, Aim, Apparatus) => {
   //   height: pngDims.height - 70,
   // });
   const uri = await pdfDoc.saveAsBase64({ dataUri: true });
-  document.getElementById("mypdf").src = uri;
+  // document.getElementById("mypdf").src = uri;
+  return uri;
   // console.log(name);
   // console.log(ExpName);
   // console.log(Date);
