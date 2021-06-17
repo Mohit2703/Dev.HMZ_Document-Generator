@@ -42,7 +42,7 @@ var storage = multer.diskStorage({
 });
 
 var upload = multer({ storage: storage }).array("files", 12);
-app.post("/upload", (req, res, next) => {
+app.post("/gen", (req, res, next) => {
   upload(req, res, function (err) {
     if (err) {
       return res.send("something wrong");
@@ -71,22 +71,22 @@ var sAim = null;
 var sDate = null;
 var sColor = null;
 var sInst = null;
-app.post("/im", (req, res) => {
-  res.render("pdf");
-  sName = req.body.user.name;
-  console.log(sName);
-  sExp = req.body.user.exp;
-  console.log(sExp);
-  sAim = req.body.user.aim;
-  console.log(sAim);
-  sDate = req.body.user.date;
-  console.log(sDate);
-  sColor = req.body.user.color;
-  console.log(sColor);
-  sInst = req.body.user.inst;
-  console.log(sInst);
-  // generatePDF(sName, sDate, sExp, sAim, sInst);
-});
+// app.post("/gen", (req, res) => {
+//   res.render("gen");
+//   sName = req.body.user.name;
+//   // console.log(sName);
+//   sExp = req.body.user.exp;
+//   // console.log(sExp);
+//   sAim = req.body.user.aim;
+//   // console.log(sAim);
+//   sDate = req.body.user.date;
+//   // console.log(sDate);
+//   sColor = req.body.user.color;
+//   // console.log(sColor);
+//   sInst = req.body.user.inst;
+//   // console.log(sInst);
+//   generatePDF(sName, sDate, sExp, sAim, sInst, or);
+// });
 
 // app.get("/homeWebApp", (req, res) => {
 //   res.sendFile(__dirname + "/homeWebApp.html");
