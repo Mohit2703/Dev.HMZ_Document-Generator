@@ -190,12 +190,12 @@ form{
     box-shadow: 0 1px 3px 0 rgba(0,0,0,8%);
     font-family: 'Montserrat', sans-serif;
 }
-#file{
+#files{
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-#file input{
+#files{
     padding: 5px;
     width: 300px;
     color: black;
@@ -204,7 +204,7 @@ form{
     align-items: center;
     text-align: center;
 }
-#file input::-webkit-file-upload-button{
+#files::-webkit-file-upload-button{
     border-radius: 7px;
     outline: none;
     border: none;
@@ -216,7 +216,7 @@ form{
     transition: all 300ms ease;
     font-size: large;
 }
-#file input::-webkit-file-upload-button:hover{
+#files::-webkit-file-upload-button:hover{
     background: rgba(68, 68, 68,0.8);
 }
 .row{
@@ -249,9 +249,27 @@ form{
     box-shadow:0 5px 5px 0 rgba(0,0,0,8%);
     color: black;
 }
+#bb{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+#bb:hover{
+    background: #4272d7;
+    color: black;
+}
 @media only screen and (max-width: 600px){
     .card-body{
         padding: 50px 40px;
+    }
+    #bb{
+        margin-top: 20px;
+    }
+    #files{
+        width: 100%;
     }
     .input input{
         width: 200px;
