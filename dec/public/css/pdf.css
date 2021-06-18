@@ -244,6 +244,27 @@ form{
 .col{
     margin: 10px 5px;
 }
+#gen-pdf{
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    transition: all 300ms ease;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,8%);
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#gen-pdf:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
 .submit:hover{
     background: #f0efef;
     box-shadow:0 5px 5px 0 rgba(0,0,0,8%);
@@ -270,6 +291,9 @@ form{
     }
     #files{
         width: 100%;
+    }
+    #gen-pdf{
+        width: 200px;
     }
     .input input{
         width: 200px;

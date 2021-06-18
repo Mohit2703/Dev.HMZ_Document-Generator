@@ -2,6 +2,7 @@ const express = require("express");
 const generatePDF = require("./views/trans.js");
 const downPdf = require("./views/doc.js");
 const rend = require("./views/rnder.js");
+// const script = require("./views/script");
 // const alert = require("alert");
 const path = require("path");
 const bodyParser = require("body-parser");
@@ -64,6 +65,9 @@ app.get("/video", (req, res) => {
 });
 app.get("/pdf", (req, res) => {
   res.render("pdf");
+});
+app.get("/team", (req, res) => {
+  res.render("team");
 });
 // app.get("/im", (req, res) => {
 //   res.render("im");

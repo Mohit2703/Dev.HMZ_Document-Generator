@@ -89,16 +89,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <!-- <div class="col">
                             <div class="input">
                                 <label class="label" style="font-family: 'Montserrat', sans-serif"> choose colour</label>
                                  <input type="color" name="user[color]" id="" placeholder="size">
                              </div>
-                        </div>
+                        </div> -->
                         <div class="col">
                          <div class="input">
                              <label class="label" style="font-family: 'Montserrat', sans-serif">date</label>
-                              <input type="date" required name="user[date]" id="" placeholder="exp">
+                              <input type="date" required name="user[date]" id="" placeholder="exp" style="cursor: pointer;">
                           </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                     </div>
                    </form>
                    <form action="/pd" method="POST">
-                    <input type="submit"  value="Click here to download" />
+                    <input type="submit" id="gen-pdf" value="Click here to download" />
                   </form>
                    
                </div>

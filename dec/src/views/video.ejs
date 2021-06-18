@@ -55,16 +55,35 @@
             <h1 style=" font-family: 'Roboto',sans-serif; font-weight: 900;">Please enter the aim of the experiment.</h1>
             <p style=" font-family: 'Montserrat',sans-serif; font-size: 20px; color: white; font-weight: 500;">We will provide you a video link of the practical.</p>
             <div class="search_box">
-                <div class="search_btn">
+                <!-- <div class="search_btn">
                     <i class="fas fa-search"></i></div>
-                    <input type="text" name="" id="" placeholder="please enter the aim.." class="input_search" maxlength="5" style="font-size: 20px;">
+                    <input type="text" name="" id="" placeholder="please enter the aim.." class="input_search" maxlength="5" style="font-size: 20px;"> -->
+                    <form id="form">
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" id="search" placeholder="type here to search...">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-danger" value="Search" id="pushable">
+                       </div>
+                    </form>
               </div>
-              <div class="btn">
+              <br>
+              <div class="row">
+                <div class="col-md-12">
+                    <div id="videos">
+        
+                    </div>
+                </div>
+            </div>
+              <!-- <div class="btn">
                 <button class="pushable">
                     <span class="front">Search</span>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script/script.js"></script>
 </html>
