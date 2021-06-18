@@ -49,7 +49,7 @@ app.post("/upload", (req, res, next) => {
     if (err) {
       return res.send("something wrong");
     }
-    res.send("upload complete");
+
     console.log(or);
   });
 });
@@ -87,7 +87,7 @@ app.post("/gen", (req, res) => {
   // console.log(sColor);
   sInst = req.body.user.inst;
   // console.log(sInst);
-  downPdf(sName, sDate, sExp, sAim, sInst);
+  downPdf(sName, sDate, sExp, sAim, sInst, or);
 });
 
 // app.get("/homeWebApp", (req, res) => {

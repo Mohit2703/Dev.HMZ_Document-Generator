@@ -55,6 +55,10 @@
            <div class="card">
                <div class="card-body">
                    <h2 class="h2" style="font-family: 'Roboto', sans-serif">Fill the details</h2>
+                   <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <input type="file" name="files" id="files" />
+                    <button type="submit">Upload</button>
+                  </form>
                    <form action="/gen" method="POST">
                        <div class="row">
                            <div class="col">
@@ -100,17 +104,13 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="input" id="file">
-                                 <input type="file" name="" id="">
-                             </div>
-                        </div>
-                        <div class="col">
                          <div class="input">
                              <input type="submit" class="submit" value="Generate-pdf" />
                           </div>
                         </div>
                     </div>
                    </form>
+                   
                </div>
            </div>
             </div>
