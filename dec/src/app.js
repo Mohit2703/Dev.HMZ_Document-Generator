@@ -51,7 +51,7 @@ app.post("/upload", (req, res, next) => {
     if (err) {
       return res.send("something wrong");
     }
-    console.log(or);
+    // console.log(or);
   });
 });
 
