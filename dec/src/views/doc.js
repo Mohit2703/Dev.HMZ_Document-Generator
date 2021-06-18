@@ -1,4 +1,4 @@
-const downPdf = async (name, date, expName, Aim, Instruments) => {
+const downPdf = async (name, date, expName, Aim, Instruments, fileName) => {
   const PDFDocument = require("pdfkit");
   const fs = require("fs");
 
@@ -22,7 +22,7 @@ const downPdf = async (name, date, expName, Aim, Instruments) => {
   // doc.stroke();
   doc.rect(20, 330, 570, 0);
   // doc.stroke();
-  doc.image("ZAID.jpg", 150, 350, {
+  doc.image("uploads/" + fileName, 150, 350, {
     fit: [300, 400],
     align: "center",
     valign: "center",
