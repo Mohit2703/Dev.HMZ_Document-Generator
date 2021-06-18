@@ -76,7 +76,7 @@ var sName = null;
 var sExp = null;
 var sAim = null;
 var sDate = null;
-var sColor = null;
+var sSubject = null;
 var sInst = null;
 app.post("/gen", (req, res) => {
   // res.render("gen");
@@ -88,8 +88,8 @@ app.post("/gen", (req, res) => {
   // console.log(sAim);
   sDate = req.body.user.date;
   // console.log(sDate);
-  sColor = req.body.user.color;
-  // console.log(sColor);
+  sColor = req.body.user.subject;
+  // console.log(sSubject);
   sInst = req.body.user.inst;
   // console.log(sInst);
   downPdf(sName, sDate, sExp, sAim, sInst, or);
