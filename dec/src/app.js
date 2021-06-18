@@ -1,8 +1,9 @@
 const express = require("express");
 const generatePDF = require("./views/trans.js");
 const downPdf = require("./views/doc.js");
+const rend = require("./views/rnder.js");
 // const alert = require("alert");
-// const path=require('path');
+const path = require("path");
 const bodyParser = require("body-parser");
 const htpp = require("http");
 const ejs = require("ejs");
@@ -27,6 +28,7 @@ app.use(express.static("../public/css"));
 app.use(express.static("../public/script"));
 
 app.set("view engine", "ejs");
+// app.set("view engine", "pdf");
 
 var or = null;
 var storage = multer.diskStorage({
@@ -49,7 +51,6 @@ app.post("/upload", (req, res, next) => {
     if (err) {
       return res.send("something wrong");
     }
-
     console.log(or);
   });
 });
@@ -74,7 +75,6 @@ var sDate = null;
 var sColor = null;
 var sInst = null;
 app.post("/gen", (req, res) => {
-  res.render("gen");
   sName = req.body.user.name;
   // console.log(sName);
   sExp = req.body.user.exp;
