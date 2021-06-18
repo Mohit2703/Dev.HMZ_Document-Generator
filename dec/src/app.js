@@ -75,7 +75,7 @@ var sDate = null;
 var sColor = null;
 var sInst = null;
 app.post("/gen", (req, res) => {
-  res.render("gen");
+  // res.render("gen");
   sName = req.body.user.name;
   // console.log(sName);
   sExp = req.body.user.exp;
