@@ -1,4 +1,12 @@
-const downPdf = async (name, date, expName, Aim, Instruments, fileName) => {
+const downPdf = async (
+  name,
+  date,
+  expName,
+  subject,
+  Aim,
+  Instruments,
+  fileName
+) => {
   const PDFDocument = require("pdfkit");
   const fs = require("fs");
 
@@ -17,7 +25,7 @@ const downPdf = async (name, date, expName, Aim, Instruments, fileName) => {
     .fillColor("red");
 
   doc.fontSize(30).text(expName, 230, 50).fillColor("black");
-  doc.fontSize(20).text("Subject:", 20, 100);
+  doc.fontSize(20).text("Subject:" + subject, 20, 100);
   doc.fontSize(20).text("Aim:" + Aim, 20, 150);
   doc.fontSize(20).text("Apparatus:" + Instruments, 20, 210);
   doc.fontSize(20).text("Diagram:", 20, 330);

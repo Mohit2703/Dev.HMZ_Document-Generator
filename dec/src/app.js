@@ -88,11 +88,11 @@ app.post("/gen", (req, res) => {
   // console.log(sAim);
   sDate = req.body.user.date;
   // console.log(sDate);
-  sColor = req.body.user.subject;
+  sSubject = req.body.user.subject;
   // console.log(sSubject);
   sInst = req.body.user.inst;
   // console.log(sInst);
-  downPdf(sName, sDate, sExp, sAim, sInst, or);
+  downPdf(sName, sDate, sExp, sSubject, sAim, sInst, or);
 });
 
 app.post("/pd", (req, res) => {
