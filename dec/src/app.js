@@ -75,6 +75,7 @@ var sDate = null;
 var sColor = null;
 var sInst = null;
 app.post("/gen", (req, res) => {
+  res.render("gen");
   sName = req.body.user.name;
   // console.log(sName);
   sExp = req.body.user.exp;
@@ -88,6 +89,11 @@ app.post("/gen", (req, res) => {
   sInst = req.body.user.inst;
   // console.log(sInst);
   downPdf(sName, sDate, sExp, sAim, sInst, or);
+});
+
+app.post("/pd", (req, res) => {
+  let filePath = path.join(__dirname, sExp + ".pdf");
+  res.download(filePath);
 });
 
 // app.get("/homeWebApp", (req, res) => {
