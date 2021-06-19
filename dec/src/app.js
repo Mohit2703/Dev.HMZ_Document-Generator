@@ -4,6 +4,8 @@ const downPdf = require("./views/doc.js");
 const rend = require("./views/rnder.js");
 // const script = require("./views/script");
 // const alert = require("alert");
+require("dotenv").config();
+// console.log(process.env);
 const path = require("path");
 const bodyParser = require("body-parser");
 const htpp = require("http");
