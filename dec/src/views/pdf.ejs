@@ -122,17 +122,24 @@
     
 </body>
 <script>
+    var flag=0;
     function showAlert(){
         if( document.getElementById("files").files.length == 0 ){
         alert("No files selected");
+        flag=0;
        }else{
            alert("Image has been uploaded...")
+           flag=1;
        }
     }
 
     function showGenerated(){
         if( document.getElementById("files").files.length == 0 ){
         alert("No Image selected,Please select image.");
+    }else if(flag==0){
+        alert("Please uplaod image before generating pdf...")
+    }else{
+        alert("PDF generated, click the download button below...")
     }
     
     
