@@ -24,7 +24,7 @@ const downPdf = async (
     .text("Date:" + date, 380, 20)
     .fillColor("red");
 
-  doc.fontSize(30).text(expName, 230, 50).fillColor("black");
+  doc.fontSize(30).text(expName, 200, 50).fillColor("black");
   doc.fontSize(20).text("Subject:" + subject, 20, 100);
   doc.fontSize(20).text("Aim:" + Aim, 20, 150);
   doc.fontSize(20).text("Apparatus:" + Instruments, 20, 210);
